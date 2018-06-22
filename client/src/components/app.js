@@ -1,10 +1,18 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
+import {connect} from 'react-redux';
+import * as actions from '../actions';
+
 import Landing from './landing.js';
 import Header from './header.js';
 import Dashboard from './dashboard.js';
 
+
 class App extends React.Component{
+	componentDidMount(){
+		this.props.fetchUser();
+	}
+	
 	render(){
 	return(
 	<div className = "container">
@@ -19,4 +27,4 @@ class App extends React.Component{
 	)
 }}
 
-export default App;
+export default connect(null,actions)(App);
