@@ -19,9 +19,7 @@ module.exports = (app) => {
 	});
 
 	app.get('/', (req, res) => {
-		res.send({
-			hi: "batman & JOKER"
-		});
+		res.send({hi: "batman & JOKER"});
 	})
 
 };

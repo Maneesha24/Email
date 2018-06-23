@@ -3,7 +3,7 @@ import React from 'react';
 class Landing extends React.Component{
 	render(){
 		return(<div style = {{textAlign : 'center'}}>
-			   <h4>Collect feedback</h4>
+			   <h4>Collect Landing</h4>
 			   </div>);
 	}
 }
