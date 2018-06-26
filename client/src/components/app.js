@@ -25,6 +25,6 @@ class App extends React.Component{
 		 </BrowserRouter>
 		</div>
 	);
-}}
+}};
 
 export default connect(null,actions)(App);
