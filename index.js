@@ -8,6 +8,7 @@ require('./models/User.js');
 require('./services/passport.js');
 require('./routes/billingRoutes.js');
 
+
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
 
@@ -31,7 +32,7 @@ if(process.env.NODE_ENV === 'production'){
 	
 	const path = require('path');
 	app.get('*',(req,res)=>{
-		res.sendFile(path.resolve(__dirname,'client','build','index.html'));
+		res.sendFile(path.resolve(__dirname,'client','build','index.html));
 	});
 }
 
