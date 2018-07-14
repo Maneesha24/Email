@@ -11,7 +11,7 @@ class SurveyForm extends React.Component {
 	renderFields(){
 		return _.map(FIELDS , ({label,name})=>{
 			return (
-			<Field 
+			<Field
 				key = {name} component = {SurveyField} type = "text" label = {label} name = {name} />
 			);
 		});

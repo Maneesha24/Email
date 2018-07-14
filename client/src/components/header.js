@@ -24,10 +24,10 @@ Credits: {this.props.auth.credits}
 	
 	render() {
 		return (
-			    <nav>
+			    <nav style = {{marginBottom : '20px'}}>
 				<div className ="nav-wrapper">
 				<Link to ={this.props.auth ? '/surveys' : '/'}
-			    className = "left brand-logo">Emaily</Link>
+			    className = "left brand-logo" style = {{paddingLeft : '10px'}}>Emaily</Link>
 				<ul className = "right">
 				{this.renderContent()}
 				</ul>
