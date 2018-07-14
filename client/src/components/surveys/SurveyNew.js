@@ -10,15 +10,16 @@ class SurveyNew extends React.Component{
 renderContent(){
 	
 	if(this.state.showFormReview){
-		return <SurveyFormReview onCancel = {()=> this.setState({showFormReview : false})} />
-	}
+		return (<SurveyFormReview onCancel = {()=> this.setState({showFormReview : false})} />
+	)}
 
-		return <SurveyForm onSurveySubmit = {() => this.setState({showFormReview :true})}/>
-}
+		return (<SurveyForm onSurveySubmit = {() => this.setState({showFormReview :true})}/>
+)}
 	render(){
 		return(<div>
 			   {this.renderContent()}
-			   </div>);
+			   </div>
+			  );
 	}
 }
 			   export default reduxForm({form : 'surveyForm'

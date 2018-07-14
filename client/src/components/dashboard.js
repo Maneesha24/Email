@@ -9,8 +9,8 @@ const Dashboard = () => {
 		<i className = "material-icons">add</i>
 		</Link>
 		</div>
-		
 		</div>
-	)
-}
+	);
+};
+
 export default Dashboard;
